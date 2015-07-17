@@ -1,0 +1,90 @@
+/*start with a clean sheet*/
+body{
+	margin: 0;
+	border: none;
+
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+/*gallery*/
+.gallery-container{
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+/*placeholder for the row*/
+.gallery-row {
+	
+}
+
+/*frame*/
+.frame-container{
+	display: inline-block;
+}
+
+/*image*/
+.frame-content {
+	background: rgb(204, 204, 204);
+	
+	/*inner glow*/
+	-moz-box-shadow:    inset 0 0 1px 1px rgba(30, 140, 212, 1);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(30, 140, 212, 1);
+  box-shadow:         inset 0 0 1px 1px rgba(30, 140, 212, 1);
+
+  /*so that borders are counted in the box*/
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box; 
+
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+/*placeholder for the image*/
+.gallery-image{
+	/*inner glow*/
+	-moz-box-shadow:    inset 0 0 1px 1px rgba(30, 140, 212, 1);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(30, 140, 212, 1);
+  box-shadow:         inset 0 0 1px 1px rgba(30, 140, 212, 1);
+
+  /*so that borders are counted in the box*/
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box; 
+
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+/*text under the image*/
+.frame-text-container{
+	background: rgb(30, 140, 212);
+	height: 30px;
+
+  border: 2px solid rgb(30, 140, 212);
+  border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+
+	position: relative;
+}
+.frame-text-area{
+	top: 9px;
+	margin-left: 11px;
+	margin-right: 22px;
+	position: absolute;
+
+	color: white;
+
+	font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+  font-weight: bold;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: always;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;	
+}
